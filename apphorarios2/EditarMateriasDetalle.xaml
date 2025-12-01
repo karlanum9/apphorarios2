@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.EditarMateriasDetalle"
+             Title="Editar Materia">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Editar Materias" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label x:Name="LblMateria" 
+                           Text="Materia: CONCIENCIA HISTORICA II MEXICO DURANTE EL EXPANSIONISMO CAPITALISTA" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Nombre:" 
+                           FontSize="14"
+                           FontAttributes="Bold"/>
+                    <Entry x:Name="TxtNombreMateria" 
+                           Text="CONCIENCIA HISTORICA II MEXICO DURANTE EL EXPANSIONISMO CAPITALISTA"
+                           HeightRequest="50"/>
+
+                    <Button x:Name="BtnGuardar" 
+                            Text="Guardar" 
+                            Clicked="BtnGuardar_Clicked"
+                            HeightRequest="45"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.SeleccionarMateriaEditar"
+             Title="Editar Materias">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Editar Materias" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Selecciona la materia que deseas editar:" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <Picker x:Name="PickerMateria" 
+                            Title="Selecciona una materia"/>
+
+                    <Button x:Name="BtnSiguiente" 
+                            Text="Siguiente" 
+                            Clicked="BtnSiguiente_Clicked"
+                            HeightRequest="45"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

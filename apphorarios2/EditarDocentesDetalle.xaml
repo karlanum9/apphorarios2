@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.EditarDocentesDetalle"
+             Title="Editar Docente">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Editar Docente" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Editar información del docente" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <!-- Aquí irían los controles para editar docente -->
+                    <Label Text="Funcionalidad en desarrollo" 
+                           HorizontalOptions="Center"/>
+
+                    <Button x:Name="BtnGuardar" 
+                            Text="Guardar Cambios" 
+                            Clicked="BtnGuardar_Clicked"
+                            HeightRequest="45"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

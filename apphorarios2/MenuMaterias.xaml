@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.MenuMaterias"
+             Title="Menú Materias">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Materias" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Qué deseas hacer?" 
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="15">
+                <Button x:Name="BtnAgregarMaterias" 
+                        Text="Agregar Materias" 
+                        Clicked="BtnAgregarMaterias_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnBorrarMaterias" 
+                        Text="Borrar Materias" 
+                        Clicked="BtnBorrarMaterias_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnConsultarMaterias" 
+                        Text="Consultar Materias" 
+                        Clicked="BtnConsultarMaterias_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnVolver" 
+                        Text="Volver" 
+                        Clicked="BtnVolver_Clicked"
+                        HeightRequest="50"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

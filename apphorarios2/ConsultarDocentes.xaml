@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.ConsultarDocentes"
+             Title="Consultar Docentes">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Consultar Docentes" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Estos son los docentes guardados:" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <CollectionView x:Name="ListaDocentes">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10">
+                                    <Label Text="{Binding .}" 
+                                           FontSize="14"/>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

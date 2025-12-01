@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.PantallaPrincipal"
+             Title="Pantalla Principal">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="40" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Hola, Buenos Dias!" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Selecciona Una Opcion" 
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="20">
+                <Button x:Name="BtnAlumno" 
+                        Text="Soy Alumno" 
+                        Clicked="BtnAlumno_Clicked"
+                        HeightRequest="60"/>
+
+                <Button x:Name="BtnDocente" 
+                        Text="Soy Docente" 
+                        Clicked="BtnDocente_Clicked"
+                        HeightRequest="60"/>
+
+                <Button x:Name="BtnAdministracion" 
+                        Text="Administracion" 
+                        Clicked="BtnAdministracion_Clicked"
+                        HeightRequest="60"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

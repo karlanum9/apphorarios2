@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.MenuHorarios"
+             Title="Menú Horarios">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Horarios" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Qué deseas hacer?" 
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="15">
+                <Button x:Name="BtnAsignarHorarios" 
+                        Text="Asignar Horarios" 
+                        Clicked="BtnAsignarHorarios_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnEditarHorarios" 
+                        Text="Editar Horarios" 
+                        Clicked="BtnEditarHorarios_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnBorrarHorarios" 
+                        Text="Borrar Horarios" 
+                        Clicked="BtnBorrarHorarios_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnConsultarHorarios" 
+                        Text="Consultar Horarios" 
+                        Clicked="BtnConsultarHorarios_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnVolver" 
+                        Text="Volver" 
+                        Clicked="BtnVolver_Clicked"
+                        HeightRequest="50"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

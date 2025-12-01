@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.ConsultaAlumnoCompleto"
+             Title="Alumno">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Alumno" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="¿Dónde está mi clase?" 
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Consulta tu aula en tiempo real" 
+                   FontSize="14"
+                   HorizontalOptions="Center"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Selecciona un día" 
+                           FontSize="14"
+                           FontAttributes="Bold"/>
+                    <Picker x:Name="PickerDia" 
+                            Title="Selecciona un día"/>
+
+                    <Label Text="Selecciona tu grupo" 
+                           FontSize="14"
+                           FontAttributes="Bold"/>
+                    <Picker x:Name="PickerGrupo" 
+                            Title="Selecciona tu grupo"/>
+
+                    <Label Text="Selecciona una hora" 
+                           FontSize="14"
+                           FontAttributes="Bold"/>
+                    <Picker x:Name="PickerHora" 
+                            Title="Selecciona una hora"/>
+
+                    <Button x:Name="BtnSiguiente" 
+                            Text="Siguiente" 
+                            Clicked="BtnSiguiente_Clicked"
+                            HeightRequest="45"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame x:Name="FrameResultado" 
+                   IsVisible="False">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Mi clase" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label x:Name="LblMaestro" 
+                           Text="Maestro: GLEN ADAN GALLEGOS CASTAÑEDA"/>
+
+                    <Label x:Name="LblMateria" 
+                           Text="Materia: IMPLEMENTA BASES DE DATOS NO RELACIONALES EN UN SISTEMA DE INFORMACION"/>
+
+                    <Label x:Name="LblGrupo" 
+                           Text="Grupo: 5AMPROG"/>
+
+                    <Label x:Name="LblDia" 
+                           Text="Día: Lunes"/>
+
+                    <Label x:Name="LblAula" 
+                           Text="Aula: CC1"/>
+
+                    <Label x:Name="LblHora" 
+                           Text="Hora: 7-8"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

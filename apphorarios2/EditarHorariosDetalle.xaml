@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.EditarHorariosDetalle"
+             Title="Editar Horario">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Editar Horario" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label x:Name="LblGrupo" 
+                           Text="Grupo: 5AMPRG" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="¿Qué quieres editar?" 
+                           FontSize="16"/>
+
+                    <VerticalStackLayout Spacing="10">
+                        <Button x:Name="BtnAulas" 
+                                Text="Aulas" 
+                                Clicked="BtnAulas_Clicked"
+                                HeightRequest="45"/>
+
+                        <Button x:Name="BtnDias" 
+                                Text="Días" 
+                                Clicked="BtnDias_Clicked"
+                                HeightRequest="45"/>
+
+                        <Button x:Name="BtnHoras" 
+                                Text="Horas" 
+                                Clicked="BtnHoras_Clicked"
+                                HeightRequest="45"/>
+
+                        <Button x:Name="BtnDocentes" 
+                                Text="Docentes" 
+                                Clicked="BtnDocentes_Clicked"
+                                HeightRequest="45"/>
+
+                        <Button x:Name="BtnMaterias" 
+                                Text="Materias" 
+                                Clicked="BtnMaterias_Clicked"
+                                HeightRequest="45"/>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

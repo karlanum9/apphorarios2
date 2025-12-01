@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.MateriaEliminada"
+             Title="Materia Eliminada">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="40" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Borrar Materias" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Materia Eliminada" 
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   TextColor="Green"
+                   FontAttributes="Bold"/>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

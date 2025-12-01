@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.ConfirmarBorrarDocente"
+             Title="Borrar Docentes">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Borrar Docentes" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="20">
+                    <Label x:Name="LblDocente" 
+                           Text="Docente: [Nombre del docente]" 
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="¿Deseas eliminar este docente?" 
+                           FontSize="16"
+                           HorizontalOptions="Center"/>
+
+                    <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                        <Button x:Name="BtnSi" 
+                                Text="Si" 
+                                Clicked="BtnSi_Clicked"
+                                WidthRequest="80"
+                                HeightRequest="45"/>
+
+                        <Button x:Name="BtnNo" 
+                                Text="No" 
+                                Clicked="BtnNo_Clicked"
+                                WidthRequest="80"
+                                HeightRequest="45"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

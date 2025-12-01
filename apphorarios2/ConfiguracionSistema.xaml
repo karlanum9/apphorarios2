@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.ConfiguracionSistema"
+             Title="Configuración">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30">
+
+            <Label Text="Configuración del Sistema" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Frame>
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Ajustes Generales" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="Notificaciones:" 
+                               VerticalOptions="Center"/>
+                        <Switch x:Name="SwitchNotificaciones" 
+                                IsToggled="True"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Label Text="Modo Oscuro:" 
+                               VerticalOptions="Center"/>
+                        <Switch x:Name="SwitchModoOscuro" 
+                                IsToggled="False"/>
+                    </HorizontalStackLayout>
+
+                    <Label Text="Horario Laboral" 
+                           FontSize="16"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="Hora de inicio:"/>
+                    <TimePicker x:Name="TimeInicio" 
+                                Time="7:00:00"/>
+
+                    <Label Text="Hora de fin:"/>
+                    <TimePicker x:Name="TimeFin" 
+                                Time="15:00:00"/>
+
+                    <Button x:Name="BtnGuardarConfig" 
+                            Text="Guardar Configuración" 
+                            Clicked="BtnGuardarConfig_Clicked"
+                            HeightRequest="45"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="45"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

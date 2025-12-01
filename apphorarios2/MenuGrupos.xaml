@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.MenuGrupos"
+             Title="Menú Grupos">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Grupos" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Qué deseas hacer?" 
+                   FontSize="18"
+                   HorizontalOptions="Center"/>
+
+            <VerticalStackLayout Spacing="15">
+                <Button x:Name="BtnAgregarGrupos" 
+                        Text="Agregar Grupos" 
+                        Clicked="BtnAgregarGrupos_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnBorrarGrupos" 
+                        Text="Borrar Grupos" 
+                        Clicked="BtnBorrarGrupos_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnConsultarGrupos" 
+                        Text="Consultar Grupos" 
+                        Clicked="BtnConsultarGrupos_Clicked"
+                        HeightRequest="50"/>
+
+                <Button x:Name="BtnVolver" 
+                        Text="Volver" 
+                        Clicked="BtnVolver_Clicked"
+                        HeightRequest="50"/>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

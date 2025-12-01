@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apphorarios2.PantallaMaterias"
+             Title="Materias">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="30" VerticalOptions="Center">
+
+            <Label Text="Materias" 
+                   FontSize="24"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Funcionalidad de Materias - En Desarrollo" 
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+            
+            <Label Text="Esta sección estará disponible en la próxima actualización" 
+                   FontSize="14"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"/>
+
+            <Button x:Name="BtnVolver" 
+                    Text="Volver" 
+                    Clicked="BtnVolver_Clicked"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
